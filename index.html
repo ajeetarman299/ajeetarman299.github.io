@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
 <style>
 /* Layout: dark-first editorial page. Split hero (text + framed portrait) over an attack-path field,
-   then a results board, a work timeline with the fix-loop diagram, project cards, and track lanes for athletics. */
+   then a results board, a work timeline, project cards, and track lanes for athletics. */
 :root {
   --bg: #070d18;
   --bg-2: #0b1424;
@@ -232,19 +232,6 @@ section { padding-block: 88px; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
 .tag { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.02em; color: var(--muted); border: 1px solid var(--line); padding: 4px 9px; border-radius: 6px; }
 
-.loop { margin-top: 26px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg-2); padding: 18px 18px 12px; }
-.loop .cap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; margin-bottom: 8px; }
-.loop .cap span:last-child { color: var(--muted); font-size: var(--s-sm); }
-.loop .scroll { overflow-x: auto; }
-.loop svg { width: 100%; min-width: 620px; height: auto; display: block; }
-.loop .box { fill: var(--surface-2); stroke: var(--line); }
-.loop .box.hot { stroke: var(--accent); fill: color-mix(in srgb, var(--accent) 12%, transparent); }
-.loop .t { fill: var(--ink); font: 500 13px var(--sans); }
-.loop .t2 { fill: var(--muted); font: 400 11px var(--mono); letter-spacing: 0.04em; }
-.loop .arr { stroke: var(--muted); stroke-width: 1.4; fill: none; }
-.loop .arr.back { stroke: var(--accent); stroke-dasharray: 4 4; }
-.loop .head-fill { fill: var(--muted); }
-.loop .head-fill.a { fill: var(--accent); }
 
 /* results board */
 .board { border: 1px solid var(--line); border-radius: 18px; background: var(--surface); overflow: hidden; }
@@ -413,8 +400,8 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8p
       <div>
         <div class="head"><p class="label">About</p><h2 id="about-h">Where strategy meets <em class="s">design</em></h2></div>
         <div class="text">
-          <p>At EmulateAI we build an autonomous penetration-testing platform that finds security vulnerabilities and helps teams fix them, the way an expert pentest team would, at machine speed.</p>
-          <p>On strategy, I own roadmap prioritization, sprint planning and delivery for our R&amp;D team, and I track the AI-security market closely to shape what we build. On design, I take features from problem to shipped experience: user flows, interactive prototypes, and the PRDs and specs our engineers build from.</p>
+          <p>I'm a product manager working on an autonomous pentesting product.</p>
+          <p>I work across strategy and design: roadmap and sprint planning on one side, user flows, prototypes and PRDs on the other.</p>
           <p>My data-science background helps me build AI products around how the technology actually behaves. Before product, I was Vice-Captain of IIT Kharagpur's Inter-IIT athletics team.</p>
         </div>
       </div>
@@ -434,43 +421,13 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8p
         <div class="when"><span class="now"><span class="pulse" aria-hidden="true"></span>Oct 2025 - Present</span><span>Bengaluru</span></div>
         <div>
           <h3>Associate Product Manager</h3>
-          <p class="org"><b>EmulateAI</b> · autonomous penetration testing</p>
+          <p class="org"><b>EmulateAI</b></p>
           <ul class="bullets">
-            <li>Own roadmap prioritization, sprint planning and story-pointing for the R&amp;D team, turning customer and market needs into shipped features.</li>
-            <li>Design core product experiences end to end: the vulnerability revalidation and developer fix-loop, the assessment-launch flow and portal UX, from user flows to interactive prototypes and PRDs.</li>
-            <li>Designed the credit-based licensing model, defining plan-level access and credit consumption across the product.</li>
-            <li>Run daily competitive intelligence on the autonomous-pentest and AI-security market to inform positioning and roadmap.</li>
-            <li>Balance workload across engineers, track delivery and report weekly progress to leadership.</li>
-            <li>Validate features against their acceptance criteria before release, so defects are caught before customers see them.</li>
+            <li>Own the roadmap and sprint planning for the R&amp;D team.</li>
+            <li>Design product experiences end to end, from user flows and prototypes to PRDs.</li>
+            <li>Track the market and validate every release before it ships.</li>
           </ul>
-          <figure class="loop" style="margin-inline:0">
-            <figcaption class="cap"><span class="label">The fix-loop</span><span>A finding closes only after the fix is re-tested.</span></figcaption>
-            <div class="scroll">
-              <svg viewBox="0 0 660 150" role="img" aria-label="Flow: finding reported, assigned to a developer, fix shipped, revalidated, closed. If revalidation still finds the issue, it returns to the developer.">
-                <defs>
-                  <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="head-fill" d="M0 0L10 5L0 10z"/></marker>
-                  <marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="head-fill a" d="M0 0L10 5L0 10z"/></marker>
-                </defs>
-                <rect class="box" x="4" y="46" width="108" height="50" rx="10"/>
-                <text class="t" x="58" y="68" text-anchor="middle">Finding</text><text class="t2" x="58" y="84" text-anchor="middle">OPEN</text>
-                <rect class="box" x="140" y="46" width="118" height="50" rx="10"/>
-                <text class="t" x="199" y="68" text-anchor="middle">Assigned</text><text class="t2" x="199" y="84" text-anchor="middle">TO DEVELOPER</text>
-                <rect class="box" x="286" y="46" width="108" height="50" rx="10"/>
-                <text class="t" x="340" y="68" text-anchor="middle">Fix shipped</text><text class="t2" x="340" y="84" text-anchor="middle">DEV DONE</text>
-                <rect class="box hot" x="422" y="46" width="112" height="50" rx="10"/>
-                <text class="t" x="478" y="68" text-anchor="middle">Revalidated</text><text class="t2" x="478" y="84" text-anchor="middle">RE-TESTED</text>
-                <rect class="box" x="562" y="46" width="94" height="50" rx="10"/>
-                <text class="t" x="609" y="68" text-anchor="middle">Closed</text><text class="t2" x="609" y="84" text-anchor="middle">VERIFIED</text>
-                <path class="arr" d="M112 71H136" marker-end="url(#ah)"/>
-                <path class="arr" d="M258 71H282" marker-end="url(#ah)"/>
-                <path class="arr" d="M394 71H418" marker-end="url(#ah)"/>
-                <path class="arr" d="M534 71H558" marker-end="url(#ah)"/>
-                <path class="arr back" d="M478 98C478 136 340 136 340 102" marker-end="url(#ah2)"/>
-                <text class="t2" x="409" y="142" text-anchor="middle" style="fill:var(--accent)">STILL VULNERABLE</text>
-              </svg>
-            </div>
-          </figure>
-          <div class="tags"><span class="tag">Roadmapping</span><span class="tag">PRDs</span><span class="tag">Prototyping</span><span class="tag">Pricing &amp; licensing</span><span class="tag">QA sign-off</span></div>
+          <div class="tags"><span class="tag">Roadmapping</span><span class="tag">Prototyping</span><span class="tag">PRDs</span></div>
         </div>
       </article>
 
@@ -481,7 +438,6 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8p
           <p class="org"><b>TutorBin</b></p>
           <ul class="bullets">
             <li>Built and analyzed Power BI performance dashboards that streamlined workflows across the sales and marketing teams.</li>
-            <li>Improved the in-house CRM for faster, better-informed customer support.</li>
             <li>Ran the end-to-end sales pipeline and international client operations as the main point of contact.</li>
           </ul>
           <div class="tags"><span class="tag">Power BI</span><span class="tag">CRM</span><span class="tag">Sales operations</span></div>
@@ -495,7 +451,6 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8p
           <p class="org"><b>SportsHedge</b> · cricket player-trading platform</p>
           <ul class="bullets">
             <li>Shaped the MVP from 30+ user interviews and a review of 7 sports-trading platforms, ranking features by user pain.</li>
-            <li>Designed wireframes and user flows in Figma for a clear, unambiguous trading experience.</li>
             <li>Drove go-to-market through 10+ influencer partnerships and data-led campaigns: 46k+ visitors in 2 months.</li>
           </ul>
           <div class="tags"><span class="tag">User research</span><span class="tag">Figma</span><span class="tag">Go-to-market</span></div>
