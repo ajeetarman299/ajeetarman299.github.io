@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ajeet Singh Rajpoot · Product Manager</title>
+<meta name="description" content="Ajeet Singh Rajpoot, Associate Product Manager at EmulateAI, building an autonomous pentesting product. IIT Kharagpur '25.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ajeetarman299.github.io/">
+<meta property="og:title" content="Ajeet Singh Rajpoot · Product Manager">
+<meta property="og:description" content="Associate Product Manager at EmulateAI, building an autonomous pentesting product. Strategy, UX and delivery.">
+<meta property="og:image" content="https://ajeetarman299.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070d18">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070d18'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='36' text-anchor='middle' fill='%234fd1c5'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+/* Layout: dark-first editorial page. Split hero (text + framed portrait) over an attack-path field,
+   then a results board, a work timeline with the fix-loop diagram, project cards, and track lanes for athletics. */
+:root {
+  --bg: #070d18;
+  --bg-2: #0b1424;
+  --surface: rgba(148, 178, 214, 0.045);
+  --surface-2: rgba(148, 178, 214, 0.08);
+  --ink: #e9eff7;
+  --muted: #93a2b8;
+  --line: rgba(148, 178, 214, 0.15);
+  --accent: #4fd1c5;
+  --accent-2: #7dd3fc;
+  --track: #f5a06f;
+  --glow: rgba(79, 209, 197, 0.16);
+  --node: rgba(148, 178, 214, 0.35);
+  --grain: 0.05;
+  --sans: "Geist", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --s-xs: 0.75rem;
+  --s-sm: 0.875rem;
+  --s-base: 1rem;
+  --s-md: 1.125rem;
+  --s-lg: 1.375rem;
+  --s-xl: clamp(2rem, 1.4rem + 2.4vw, 3rem);
+  --s-hero: clamp(3rem, 1.6rem + 5.6vw, 5.75rem);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f6f7f9;
+    --bg-2: #eef1f5;
+    --surface: #ffffff;
+    --surface-2: #f1f4f8;
+    --ink: #0c1626;
+    --muted: #55637a;
+    --line: #dfe4ec;
+    --accent: #0a7f78;
+    --accent-2: #0369a1;
+    --track: #c2410c;
+    --glow: rgba(10, 127, 120, 0.10);
+    --node: rgba(85, 99, 122, 0.35);
+    --grain: 0.025;
+    color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #f6f7f9;
+  --bg-2: #eef1f5;
+  --surface: #ffffff;
+  --surface-2: #f1f4f8;
+  --ink: #0c1626;
+  --muted: #55637a;
+  --line: #dfe4ec;
+  --accent: #0a7f78;
+  --accent-2: #0369a1;
+  --track: #c2410c;
+  --glow: rgba(10, 127, 120, 0.10);
+  --node: rgba(85, 99, 122, 0.35);
+  --grain: 0.025;
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--s-base);
+  line-height: 1.65;
+  padding-inline: max(20px, env(safe-area-inset-left, 0px));
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+body::before {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 100; opacity: var(--grain);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+h1, h2, h3 { margin: 0; line-height: 1.08; text-wrap: balance; font-weight: 600; }
+p, ul, dl, dd { margin: 0; }
+ul { padding: 0; list-style: none; }
+em.s { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: 0; }
+.grad { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.wrap { max-width: 1120px; margin-inline: auto; }
+.label { font-family: var(--mono); font-size: var(--s-xs); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+
+/* ---------- nav ---------- */
+.nav {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50;
+  margin-inline: -20px; padding-inline: 20px;
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+.mono-mark { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 600; letter-spacing: -0.01em; }
+.mono-mark i {
+  width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center;
+  font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--accent);
+  background: var(--surface-2); border: 1px solid var(--line);
+}
+.nav nav { display: flex; align-items: center; gap: 4px; }
+.nav nav a {
+  font-size: var(--s-sm); color: var(--muted); text-decoration: none; padding: 6px 10px; border-radius: 6px;
+}
+.nav nav a:hover { color: var(--ink); background: var(--surface-2); }
+.theme {
+  width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface);
+  color: var(--muted); cursor: pointer; display: grid; place-items: center; margin-left: 6px;
+}
+.theme:hover { color: var(--ink); }
+.theme svg { width: 16px; height: 16px; }
+
+/* ---------- hero ---------- */
+.hero { position: relative; isolation: isolate; padding-block: 84px 72px; }
+.hero::before {
+  content: ""; position: absolute; z-index: -2; inset: -40px -20vw 0; pointer-events: none;
+  background:
+    radial-gradient(600px 360px at 78% 38%, var(--glow), transparent 70%),
+    radial-gradient(480px 300px at 12% 10%, color-mix(in srgb, var(--accent-2) 10%, transparent), transparent 70%);
+}
+#field { position: absolute; z-index: -1; inset: 0 -20px; width: calc(100% + 40px); height: 100%; pointer-events: none; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.8fr); gap: 56px; align-items: center; }
+.status {
+  display: inline-flex; align-items: center; gap: 10px; padding: 6px 12px 6px 10px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--surface); font-size: var(--s-sm); color: var(--muted);
+}
+.pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0 var(--glow); animation: pulse 2.4s infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 55%, transparent); } 70% { box-shadow: 0 0 0 9px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+@media (prefers-reduced-motion: reduce) { .pulse { animation: none; } }
+.hero h1 { font-size: var(--s-hero); letter-spacing: -0.045em; font-weight: 600; margin-top: 26px; }
+.hero h1 .last { display: block; }
+.tagline { font-size: clamp(1.25rem, 1rem + 1vw, 1.6rem); line-height: 1.35; margin-top: 22px; max-width: 30ch; color: var(--ink); letter-spacing: -0.01em; }
+.tagline em.s { font-size: 1.12em; }
+.lede { color: var(--muted); max-width: 36rem; margin-top: 18px; font-size: var(--s-md); }
+.cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; font: 500 var(--s-sm)/1 var(--sans);
+  padding: 12px 16px; border-radius: 10px; text-decoration: none; cursor: pointer;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+  transition: transform .15s ease, border-color .15s ease, background .15s ease;
+}
+.btn:hover { transform: translateY(-1px); border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); }
+.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn svg { width: 16px; height: 16px; }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:hover { transform: none; } }
+
+.portrait { position: relative; justify-self: end; width: 100%; max-width: 340px; }
+.frame {
+  position: relative; border-radius: 22px; padding: 1px;
+  background: linear-gradient(150deg, color-mix(in srgb, var(--accent) 70%, transparent), transparent 40%, color-mix(in srgb, var(--accent-2) 55%, transparent));
+  box-shadow: 0 30px 80px -30px color-mix(in srgb, var(--accent) 35%, transparent);
+}
+.frame img { border-radius: 21px; aspect-ratio: 1 / 1; object-fit: cover; width: 100%; background: var(--bg-2); }
+.chip-card {
+  position: absolute; left: -26px; bottom: 26px; display: grid; gap: 2px; padding: 12px 14px; border-radius: 12px;
+  background: color-mix(in srgb, var(--bg) 82%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  border: 1px solid var(--line); box-shadow: 0 12px 30px -12px rgba(0, 0, 0, 0.45);
+}
+.chip-card b { font-weight: 600; font-size: var(--s-sm); }
+.chip-card span { font-family: var(--mono); font-size: 0.6875rem; letter-spacing: 0.08em; color: var(--accent); text-transform: uppercase; }
+.chip-card.top { left: auto; right: -18px; top: 22px; bottom: auto; }
+
+.highlights {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 72px;
+  border: 1px solid var(--line); border-radius: 16px; background: var(--surface); overflow: hidden;
+}
+.highlights div { padding: 20px 22px; display: grid; gap: 4px; }
+.highlights div + div { border-left: 1px solid var(--line); }
+.highlights b { font-family: var(--serif); font-weight: 400; font-size: 2rem; line-height: 1.05; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.highlights span { color: var(--muted); font-size: var(--s-sm); line-height: 1.45; }
+
+/* ---------- sections ---------- */
+section { padding-block: 88px; }
+.head { display: grid; gap: 12px; margin-bottom: 40px; max-width: 46rem; }
+.head h2 { font-size: var(--s-xl); letter-spacing: -0.035em; }
+.head h2 em.s { font-size: 1.08em; color: var(--accent); }
+.head p { color: var(--muted); font-size: var(--s-md); }
+
+/* about */
+.about { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 56px; align-items: start; }
+.about .text { display: grid; gap: 18px; font-size: 1.0625rem; max-width: 38rem; }
+.about .text p:first-child { font-size: var(--s-lg); line-height: 1.5; letter-spacing: -0.01em; }
+.facts { display: grid; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
+.facts > div { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 16px; padding: 16px 20px; }
+.facts > div + div { border-top: 1px solid var(--line); }
+.facts dt { font-family: var(--mono); font-size: var(--s-xs); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+.facts dd { font-weight: 500; }
+
+/* work */
+.timeline { display: grid; gap: 18px; }
+.job {
+  display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 36px; padding: 30px;
+  border: 1px solid var(--line); border-radius: 18px; background: var(--surface);
+}
+.job.feature { background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 7%, var(--surface)), var(--surface)); }
+.when { font-family: var(--mono); font-size: var(--s-sm); color: var(--muted); font-variant-numeric: tabular-nums; display: grid; gap: 4px; align-content: start; }
+.when .now { color: var(--accent); display: inline-flex; align-items: center; gap: 8px; }
+.job h3 { font-size: var(--s-lg); letter-spacing: -0.02em; }
+.org { color: var(--muted); margin-top: 4px; }
+.org b { color: var(--ink); font-weight: 600; }
+.bullets { display: grid; gap: 10px; margin-top: 18px; max-width: 46rem; }
+.bullets li { position: relative; padding-left: 22px; }
+.bullets li::before { content: ""; position: absolute; left: 2px; top: 0.66em; width: 7px; height: 7px; border-radius: 2px; border: 1.5px solid var(--accent); transform: rotate(45deg); }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.tag { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.02em; color: var(--muted); border: 1px solid var(--line); padding: 4px 9px; border-radius: 6px; }
+
+.loop { margin-top: 26px; border: 1px solid var(--line); border-radius: 14px; background: var(--bg-2); padding: 18px 18px 12px; }
+.loop .cap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; margin-bottom: 8px; }
+.loop .cap span:last-child { color: var(--muted); font-size: var(--s-sm); }
+.loop .scroll { overflow-x: auto; }
+.loop svg { width: 100%; min-width: 620px; height: auto; display: block; }
+.loop .box { fill: var(--surface-2); stroke: var(--line); }
+.loop .box.hot { stroke: var(--accent); fill: color-mix(in srgb, var(--accent) 12%, transparent); }
+.loop .t { fill: var(--ink); font: 500 13px var(--sans); }
+.loop .t2 { fill: var(--muted); font: 400 11px var(--mono); letter-spacing: 0.04em; }
+.loop .arr { stroke: var(--muted); stroke-width: 1.4; fill: none; }
+.loop .arr.back { stroke: var(--accent); stroke-dasharray: 4 4; }
+.loop .head-fill { fill: var(--muted); }
+.loop .head-fill.a { fill: var(--accent); }
+
+/* results board */
+.board { border: 1px solid var(--line); border-radius: 18px; background: var(--surface); overflow: hidden; }
+.row { display: grid; grid-template-columns: 170px minmax(0, 1fr) 90px; gap: 28px; align-items: center; padding: 22px 26px; }
+.row + .row { border-top: 1px solid var(--line); }
+.row .res { font-family: var(--serif); font-size: 2.3rem; margin: 0; color: var(--accent); line-height: 1; letter-spacing: -0.01em; }
+.row .res small { display: block; font-family: var(--mono); font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+.row h3 { font-size: var(--s-md); letter-spacing: -0.01em; }
+.row .meta { font-family: var(--mono); font-size: var(--s-xs); color: var(--accent); letter-spacing: 0.04em; margin-top: 3px; }
+.row p { color: var(--muted); font-size: 0.9375rem; margin-top: 8px; max-width: 48rem; }
+.row .yr { font-family: var(--mono); font-size: var(--s-sm); color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; display: grid; gap: 6px; justify-items: end; }
+.gh { display: inline-flex; align-items: center; gap: 6px; font-size: var(--s-xs); color: var(--accent); text-decoration: none; }
+.gh:hover { text-decoration: underline; }
+.gh svg { width: 14px; height: 14px; }
+
+/* projects */
+.projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.proj {
+  display: flex; flex-direction: column; gap: 12px; padding: 24px; border-radius: 18px; text-decoration: none;
+  border: 1px solid var(--line); background: var(--surface); transition: border-color .2s ease, transform .2s ease;
+}
+.proj:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--line)); transform: translateY(-2px); }
+@media (prefers-reduced-motion: reduce) { .proj { transition: none; } .proj:hover { transform: none; } }
+.proj .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.proj .ico { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; background: var(--surface-2); color: var(--accent); border: 1px solid var(--line); }
+.proj .ico svg { width: 18px; height: 18px; }
+.proj .arrow { color: var(--muted); font-size: var(--s-sm); font-family: var(--mono); }
+.proj h3 { font-size: var(--s-md); letter-spacing: -0.01em; }
+.proj p { color: var(--muted); font-size: 0.9375rem; flex: 1; }
+.proj .stat { font-family: var(--serif); font-size: 1.6rem; line-height: 1; }
+.proj .stat small { font-family: var(--mono); font-size: 0.6875rem; letter-spacing: 0.06em; color: var(--muted); margin-left: 6px; text-transform: uppercase; }
+
+/* athletics: track lanes */
+.lanes { display: grid; gap: 14px; }
+.lane {
+  position: relative; display: grid; grid-template-columns: 60px minmax(0, 1fr) auto; gap: 26px; align-items: start;
+  padding: 26px 28px; border-radius: 18px; border: 1px solid var(--line); background: var(--surface); overflow: hidden;
+}
+.lane::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px;
+  background: repeating-linear-gradient(90deg, var(--track) 0 36px, transparent 36px 52px); opacity: 0.55;
+}
+.lane .no { font-family: var(--serif); font-size: 2.6rem; line-height: 0.9; color: var(--track); }
+.lane h3 { font-size: var(--s-lg); letter-spacing: -0.02em; }
+.lane .bullets li::before { border-color: var(--track); }
+.lane .when { text-align: right; white-space: nowrap; }
+.medals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 14px; }
+.medals div { padding: 22px 24px; border-radius: 18px; border: 1px solid var(--line); display: grid; gap: 6px; }
+.medals b { font-family: var(--serif); font-weight: 400; font-size: 2.4rem; line-height: 1; color: var(--track); }
+.medals span { color: var(--muted); font-size: 0.9375rem; }
+
+/* skills */
+.skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.skills > div { padding: 24px; border-radius: 18px; border: 1px solid var(--line); background: var(--surface); }
+.skills h3 { font-family: var(--mono); font-size: var(--s-xs); font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips span { font-size: var(--s-sm); padding: 6px 12px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); }
+
+/* contact */
+.contact {
+  position: relative; overflow: hidden; border-radius: 26px; border: 1px solid var(--line); padding: 64px 48px;
+  background:
+    radial-gradient(520px 300px at 85% 0%, var(--glow), transparent 70%),
+    radial-gradient(420px 260px at 0% 100%, color-mix(in srgb, var(--accent-2) 10%, transparent), transparent 70%),
+    var(--surface);
+  display: grid; gap: 22px;
+}
+.contact h2 { font-size: clamp(2.4rem, 1.4rem + 4vw, 4.4rem); letter-spacing: -0.045em; max-width: 14ch; }
+.contact h2 em.s { color: var(--accent); }
+.contact p { color: var(--muted); font-size: var(--s-md); max-width: 36rem; }
+.mail { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 6px; }
+.mail code {
+  font-family: var(--mono); font-size: var(--s-md); padding: 11px 14px; border-radius: 10px;
+  background: var(--bg-2); border: 1px solid var(--line); user-select: all; overflow-wrap: anywhere;
+}
+.copied { font-family: var(--mono); font-size: var(--s-xs); color: var(--accent); min-width: 7ch; }
+footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding-block: 36px 48px; color: var(--muted); font-size: var(--s-sm); }
+
+@media (max-width: 920px) {
+  .hero { padding-block: 56px 56px; }
+  .hero-grid, .about { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .portrait { justify-self: start; max-width: 280px; }
+  .chip-card { left: auto; right: -12px; }
+  .chip-card.top { display: none; }
+  .highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .highlights div:nth-child(3) { border-left: 0; }
+  .highlights div:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .job { grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 24px; }
+  .when { grid-auto-flow: column; justify-content: start; gap: 14px; }
+  .row { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .row .yr { text-align: left; justify-items: start; grid-auto-flow: column; justify-content: start; gap: 14px; }
+  .projects, .skills, .medals { grid-template-columns: minmax(0, 1fr); }
+  .lane { grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 22px; }
+  .lane .when { text-align: left; }
+  .contact { padding: 40px 24px; }
+  #field { opacity: 0.5; }
+}
+@media (max-width: 560px) {
+  .nav nav a:not(.keep) { display: none; }
+  .highlights { grid-template-columns: minmax(0, 1fr); }
+  .highlights div + div { border-left: 0; border-top: 1px solid var(--line); }
+  .facts > div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  section { padding-block: 64px; }
+}
+</style>
+<script>
+  try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="mono-mark" href="#top" aria-label="Ajeet Singh Rajpoot, home"><i>A</i>Ajeet Singh Rajpoot</a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#results">Results</a>
+      <a href="#projects">Projects</a>
+      <a href="#athletics">Athletics</a>
+      <a class="keep" href="#contact">Contact</a>
+      <button class="theme" id="theme" type="button" aria-label="Switch colour theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero" id="top">
+    <canvas id="field" aria-hidden="true"></canvas>
+    <div class="hero-grid">
+      <div>
+        <span class="status"><span class="pulse" aria-hidden="true"></span>Associate Product Manager at EmulateAI</span>
+        <h1>Ajeet Singh <span class="last">Rajpoot</span></h1>
+        <p class="tagline">Product manager building an <em class="s grad">autonomous pentesting</em> product.</p>
+        <p class="lede">I own the roadmap, design the flows, and take each feature from the first user flow to release sign-off. IIT Kharagpur graduate with a data-science background, and an athlete at heart.</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn" href="https://www.linkedin.com/in/ajeet-singh-rajpoot" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn" href="https://github.com/ajeetarman299" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.2c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="portrait">
+        <div class="frame"><img src="assets/ajeet.jpg" width="400" height="400" alt="Portrait of Ajeet Singh Rajpoot"></div>
+        <div class="chip-card top"><span>Based in</span><b>Bengaluru, India</b></div>
+        <div class="chip-card"><span>Open to</span><b>Product roles</b></div>
+      </div>
+    </div>
+
+    <div class="highlights" aria-label="Highlights">
+      <div><b>1st <em class="s" style="font-size:.6em;color:var(--muted)">of 16</em></b><span>Open IIT Product Management, team lead</span></div>
+      <div><b>Top 50</b><span>of 10,000+ teams, Amazon ML Challenge 2024</span></div>
+      <div><b>70+</b><span>athletes led to Inter-IIT overall gold</span></div>
+      <div><b>46k+</b><span>visitors in 2 months at SportsHedge launch</span></div>
+    </div>
+  </div>
+
+  <section id="about" aria-labelledby="about-h">
+    <div class="about">
+      <div>
+        <div class="head"><p class="label">About</p><h2 id="about-h">Where strategy meets <em class="s">design</em></h2></div>
+        <div class="text">
+          <p>At EmulateAI we build an autonomous penetration-testing platform that finds security vulnerabilities and helps teams fix them, the way an expert pentest team would, at machine speed.</p>
+          <p>On strategy, I own roadmap prioritization, sprint planning and delivery for our R&amp;D team, and I track the AI-security market closely to shape what we build. On design, I take features from problem to shipped experience: user flows, interactive prototypes, and the PRDs and specs our engineers build from.</p>
+          <p>My data-science background helps me build AI products around how the technology actually behaves. Before product, I was Vice-Captain of IIT Kharagpur's Inter-IIT athletics team.</p>
+        </div>
+      </div>
+      <dl class="facts" aria-label="At a glance">
+        <div><dt>Role</dt><dd>Associate Product Manager, EmulateAI</dd></div>
+        <div><dt>Focus</dt><dd>Product strategy, UX and prototyping, roadmap and delivery</dd></div>
+        <div><dt>Education</dt><dd>Integrated M.Sc., IIT Kharagpur, 2020 - 2025 · CGPA 8.2/10</dd></div>
+        <div><dt>Location</dt><dd>Bengaluru, India</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="work" aria-labelledby="work-h">
+    <div class="head"><p class="label">Experience</p><h2 id="work-h">Selected <em class="s">work</em></h2><p>Product and operations roles, most recent first.</p></div>
+    <div class="timeline">
+      <article class="job feature">
+        <div class="when"><span class="now"><span class="pulse" aria-hidden="true"></span>Oct 2025 - Present</span><span>Bengaluru</span></div>
+        <div>
+          <h3>Associate Product Manager</h3>
+          <p class="org"><b>EmulateAI</b> · autonomous penetration testing</p>
+          <ul class="bullets">
+            <li>Own roadmap prioritization, sprint planning and story-pointing for the R&amp;D team, turning customer and market needs into shipped features.</li>
+            <li>Design core product experiences end to end: the vulnerability revalidation and developer fix-loop, the assessment-launch flow and portal UX, from user flows to interactive prototypes and PRDs.</li>
+            <li>Designed the credit-based licensing model, defining plan-level access and credit consumption across the product.</li>
+            <li>Run daily competitive intelligence on the autonomous-pentest and AI-security market to inform positioning and roadmap.</li>
+            <li>Balance workload across engineers, track delivery and report weekly progress to leadership.</li>
+            <li>Validate features against their acceptance criteria before release, so defects are caught before customers see them.</li>
+          </ul>
+          <figure class="loop" style="margin-inline:0">
+            <figcaption class="cap"><span class="label">The fix-loop</span><span>A finding closes only after the fix is re-tested.</span></figcaption>
+            <div class="scroll">
+              <svg viewBox="0 0 660 150" role="img" aria-label="Flow: finding reported, assigned to a developer, fix shipped, revalidated, closed. If revalidation still finds the issue, it returns to the developer.">
+                <defs>
+                  <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="head-fill" d="M0 0L10 5L0 10z"/></marker>
+                  <marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="head-fill a" d="M0 0L10 5L0 10z"/></marker>
+                </defs>
+                <rect class="box" x="4" y="46" width="108" height="50" rx="10"/>
+                <text class="t" x="58" y="68" text-anchor="middle">Finding</text><text class="t2" x="58" y="84" text-anchor="middle">OPEN</text>
+                <rect class="box" x="140" y="46" width="118" height="50" rx="10"/>
+                <text class="t" x="199" y="68" text-anchor="middle">Assigned</text><text class="t2" x="199" y="84" text-anchor="middle">TO DEVELOPER</text>
+                <rect class="box" x="286" y="46" width="108" height="50" rx="10"/>
+                <text class="t" x="340" y="68" text-anchor="middle">Fix shipped</text><text class="t2" x="340" y="84" text-anchor="middle">DEV DONE</text>
+                <rect class="box hot" x="422" y="46" width="112" height="50" rx="10"/>
+                <text class="t" x="478" y="68" text-anchor="middle">Revalidated</text><text class="t2" x="478" y="84" text-anchor="middle">RE-TESTED</text>
+                <rect class="box" x="562" y="46" width="94" height="50" rx="10"/>
+                <text class="t" x="609" y="68" text-anchor="middle">Closed</text><text class="t2" x="609" y="84" text-anchor="middle">VERIFIED</text>
+                <path class="arr" d="M112 71H136" marker-end="url(#ah)"/>
+                <path class="arr" d="M258 71H282" marker-end="url(#ah)"/>
+                <path class="arr" d="M394 71H418" marker-end="url(#ah)"/>
+                <path class="arr" d="M534 71H558" marker-end="url(#ah)"/>
+                <path class="arr back" d="M478 98C478 136 340 136 340 102" marker-end="url(#ah2)"/>
+                <text class="t2" x="409" y="142" text-anchor="middle" style="fill:var(--accent)">STILL VULNERABLE</text>
+              </svg>
+            </div>
+          </figure>
+          <div class="tags"><span class="tag">Roadmapping</span><span class="tag">PRDs</span><span class="tag">Prototyping</span><span class="tag">Pricing &amp; licensing</span><span class="tag">QA sign-off</span></div>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="when"><span>Jun 2025 - Sep 2025</span><span>Gurugram</span></div>
+        <div>
+          <h3>Operations</h3>
+          <p class="org"><b>TutorBin</b></p>
+          <ul class="bullets">
+            <li>Built and analyzed Power BI performance dashboards that streamlined workflows across the sales and marketing teams.</li>
+            <li>Improved the in-house CRM for faster, better-informed customer support.</li>
+            <li>Ran the end-to-end sales pipeline and international client operations as the main point of contact.</li>
+          </ul>
+          <div class="tags"><span class="tag">Power BI</span><span class="tag">CRM</span><span class="tag">Sales operations</span></div>
+        </div>
+      </article>
+
+      <article class="job">
+        <div class="when"><span>May 2024 - Jul 2024</span><span>Remote</span></div>
+        <div>
+          <h3>Product Management Intern</h3>
+          <p class="org"><b>SportsHedge</b> · cricket player-trading platform</p>
+          <ul class="bullets">
+            <li>Shaped the MVP from 30+ user interviews and a review of 7 sports-trading platforms, ranking features by user pain.</li>
+            <li>Designed wireframes and user flows in Figma for a clear, unambiguous trading experience.</li>
+            <li>Drove go-to-market through 10+ influencer partnerships and data-led campaigns: 46k+ visitors in 2 months.</li>
+          </ul>
+          <div class="tags"><span class="tag">User research</span><span class="tag">Figma</span><span class="tag">Go-to-market</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="results" aria-labelledby="results-h">
+    <div class="head"><p class="label">Competitions</p><h2 id="results-h">The <em class="s">results</em> board</h2><p>Product cases and machine-learning challenges, with the result each one earned.</p></div>
+    <div class="board">
+      <div class="row">
+        <p class="res grad">1st<small>of 16 teams</small></p>
+        <div>
+          <h3>Open IIT Product Management</h3>
+          <p class="meta">Sustainable product innovation</p>
+          <p>Led a 9-member team with a crop-residue solution: a biodegradable packaging film from areca-nut shells that breaks down in soil in 78 days, addressing 10 SDGs.</p>
+        </div>
+        <div class="yr"><span>2023</span></div>
+      </div>
+      <div class="row">
+        <p class="res grad">2nd<small>place</small></p>
+        <div>
+          <h3>Case Study General Championship</h3>
+          <p class="meta">Energy transition &amp; storage</p>
+          <p>Proposed market policies and grid-storage strategies to lift renewable share from 30% to 70-80%. Radhakrishnan Hall's first podium in the event.</p>
+        </div>
+        <div class="yr"><span>2023</span></div>
+      </div>
+      <div class="row">
+        <p class="res grad">Top 50<small>of 10,000+ teams</small></p>
+        <div>
+          <h3>Amazon ML Challenge</h3>
+          <p class="meta">Entity extraction from images</p>
+          <p>A two-stage pipeline: PaddleOCR for text extraction, then a fine-tuned T5 model to identify seven entity types.</p>
+        </div>
+        <div class="yr"><span>2024</span></div>
+      </div>
+      <div class="row">
+        <p class="res grad">Top 30<small>of 4,000+</small></p>
+        <div>
+          <h3>American Express Campus Challenge</h3>
+          <p class="meta">Predicting T20 match winners</p>
+          <p>Engineered 35+ features, reduced them with PCA and VIF, and tuned CatBoost and LightGBM models to 64% accuracy.</p>
+        </div>
+        <div class="yr"><span>2024</span><a class="gh" href="https://github.com/ajeetarman299/Predict-The-Winner-of-The-T20-Cricket-Match" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.2c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></svg>Code</a></div>
+      </div>
+      <div class="row">
+        <p class="res grad">94%<small>accuracy</small></p>
+        <div>
+          <h3>Data Analytics General Championship</h3>
+          <p class="meta">Manufacturing-unit state prediction</p>
+          <p>Ensembled LSTM, 1D CNN and AutoGluon on sensor data, with Kalman-filter cleaning and an ablation study of the sensors.</p>
+        </div>
+        <div class="yr"><span>2023</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" aria-labelledby="projects-h">
+    <div class="head"><p class="label">Projects</p><h2 id="projects-h">Built at <em class="s">IIT Kharagpur</em></h2><p>Machine-learning projects from 2024. Each card opens the code on GitHub.</p></div>
+    <div class="projects">
+      <a class="proj" href="https://github.com/ajeetarman299/Question-Answering-ChatBot-System-Development" target="_blank" rel="noopener">
+        <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span class="arrow">GitHub ↗</span></div>
+        <h3>Question-answering chatbot</h3>
+        <p>An LLM Q&amp;A assistant for an e-learning company: LangChain, HuggingFace embeddings and FAISS semantic search over a large FAQ set.</p>
+        <p class="stat">LLM<small>LangChain · FAISS</small></p>
+      </a>
+      <a class="proj" href="https://github.com/ajeetarman299/Movement-Detection-Using-Radar-Data" target="_blank" rel="noopener">
+        <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 12 18 6"/></svg></span><span class="arrow">GitHub ↗</span></div>
+        <h3>Movement detection from radar</h3>
+        <p>A GRU model on Doppler radar signals that tells apart no person, approaching and moving away, in real time.</p>
+        <p class="stat">95%<small>validation accuracy</small></p>
+      </a>
+      <a class="proj" href="https://github.com/ajeetarman299/Optimization-of-Metal-Proportions-for-Alloy-Strength" target="_blank" rel="noopener">
+        <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg></span><span class="arrow">GitHub ↗</span></div>
+        <h3>Alloy strength optimization</h3>
+        <p>A CatBoost model that predicts fatigue strength, then a grid search for the metal proportions that hit a target strength at lower cost.</p>
+        <p class="stat">88.5%<small>validation accuracy</small></p>
+      </a>
+    </div>
+  </section>
+
+  <section id="athletics" aria-labelledby="ath-h">
+    <div class="head"><p class="label">Leadership</p><h2 id="ath-h">Four years on the <em class="s">track</em></h2><p>Two of them leading the team.</p></div>
+    <div class="lanes">
+      <article class="lane">
+        <p class="no">01</p>
+        <div>
+          <h3>Inter-IIT Vice Captain, Athletics</h3>
+          <p class="org">Technology Students' Gymkhana, IIT Kharagpur</p>
+          <ul class="bullets">
+            <li>Led 70+ athletes to overall gold at the 56th Inter-IIT Sports Meet, the first time both the men's and women's teams won.</li>
+            <li>Managed a budget of INR 3.7 lakh and grew women's participation in athletics by over 15%.</li>
+          </ul>
+        </div>
+        <p class="when">Jan 2023 - Jan 2024</p>
+      </article>
+      <article class="lane">
+        <p class="no">02</p>
+        <div>
+          <h3>Captain, Athletics</h3>
+          <p class="org">Radhakrishnan Hall of Residence, IIT Kharagpur</p>
+          <ul class="bullets">
+            <li>Captained the hall to bronze in the Inter-Hall Athletics General Championship in 2023 and 2024.</li>
+            <li>Ran selection and mentoring for 200+ athletes and managed INR 65,000 per championship.</li>
+          </ul>
+        </div>
+        <p class="when">Aug 2022 - Apr 2024</p>
+      </article>
+    </div>
+    <div class="medals">
+      <div><b>40+</b><span>medals across Inter-IIT, Inter-Hall, Shaurya, Parakram and athletics championships, 2022 - 2025</span></div>
+      <div><b>2×</b><span>Athletics Excellence Award, at the 56th and 57th Inter-IIT Sports Meets</span></div>
+      <div><b>Gold</b><span>overall at the 56th Inter-IIT Sports Meet, men's and women's</span></div>
+    </div>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-h">
+    <div class="head"><p class="label">Toolkit</p><h2 id="skills-h">What I <em class="s">work with</em></h2></div>
+    <div class="skills">
+      <div><h3>Product</h3><div class="chips"><span>Roadmapping</span><span>Sprint planning</span><span>User research</span><span>Competitive analysis</span><span>PRDs</span><span>Agile</span><span>RICE</span><span>AARRR</span></div></div>
+      <div><h3>AI &amp; data</h3><div class="chips"><span>LLM product evaluation</span><span>Prompt engineering</span><span>AI agents</span><span>MCP</span><span>Python</span><span>SQL</span></div></div>
+      <div><h3>Tools</h3><div class="chips"><span>Jira</span><span>Confluence</span><span>Figma</span><span>Notion</span><span>Power BI</span><span>Canva</span></div></div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h">
+    <div class="contact">
+      <p class="label">Contact</p>
+      <h2 id="contact-h">Let's build <em class="s">something</em> good.</h2>
+      <p>I'm open to product roles and always happy to talk with people working in product, design or AI security.</p>
+      <div class="mail">
+        <code id="email">ajeetarman299@gmail.com</code>
+        <button class="btn" id="copy" type="button">Copy email</button>
+        <a class="btn" href="https://www.linkedin.com/in/ajeet-singh-rajpoot" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/ajeetarman299" target="_blank" rel="noopener">GitHub ↗</a>
+        <span class="copied" id="copied" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span>© 2026 Ajeet Singh Rajpoot</span>
+  <span>Bengaluru, India</span>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+
+  // theme toggle
+  document.getElementById('theme').addEventListener('click', function () {
+    var cur = root.getAttribute('data-theme');
+    if (!cur) cur = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    var next = cur === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+
+  // copy email
+  var email = document.getElementById('email'), out = document.getElementById('copied');
+  document.getElementById('copy').addEventListener('click', function () {
+    function selectIt() {
+      var r = document.createRange(); r.selectNodeContents(email);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); out.textContent = 'Selected';
+    }
+    try { navigator.clipboard.writeText(email.textContent.trim()).then(function () { out.textContent = 'Copied'; }, selectIt); }
+    catch (e) { selectIt(); }
+  });
+
+  // attack-path field behind the hero
+  var cv = document.getElementById('field'), ctx = cv.getContext('2d');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var nodes = [], links = [], route = [], col = {}, t0 = null;
+  function rng(s) { return function () { s = (s * 16807) % 2147483647; return (s - 1) / 2147483646; }; }
+  function colors() {
+    var cs = getComputedStyle(root);
+    col.node = cs.getPropertyValue('--node').trim(); col.line = cs.getPropertyValue('--line').trim();
+    col.a = cs.getPropertyValue('--accent').trim(); col.b = cs.getPropertyValue('--accent-2').trim();
+  }
+  function build() {
+    var r = cv.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
+    cv.width = r.width * dpr; cv.height = r.height * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var w = r.width, h = r.height, rand = rng(11), n = w < 700 ? 16 : 34;
+    nodes = [];
+    var narrow = w < 920, x0 = narrow ? 20 : w * 0.46, yMax = narrow ? h * 0.18 : h * 0.66;
+    for (var i = 0; i < n; i++) nodes.push({ x: x0 + rand() * (w - x0 - 20), y: 20 + rand() * (yMax - 20) });
+    links = [];
+    nodes.forEach(function (a, i) {
+      nodes.map(function (b, j) { return { j: j, d: Math.hypot(a.x - b.x, a.y - b.y) }; })
+        .filter(function (o) { return o.j !== i; }).sort(function (p, q) { return p.d - q.d; }).slice(0, 2)
+        .forEach(function (o) { links.push([i, o.j]); });
+    });
+    var order = nodes.map(function (_, i) { return i; }).sort(function (a, b) { return nodes[a].x - nodes[b].x; });
+    route = [order[0]];
+    var cur = order[0], end = order[order.length - 1];
+    while (cur !== end && route.length < 10) {
+      var c = nodes[cur], best = null, bd = Infinity;
+      nodes.forEach(function (b, j) {
+        if (b.x <= c.x + 40 || route.indexOf(j) > -1) return;
+        var d = Math.hypot(b.x - c.x, (b.y - c.y) * 1.6); if (d < bd) { bd = d; best = j; }
+      });
+      if (best === null) break; route.push(best); cur = best;
+    }
+  }
+  function draw(ms) {
+    var r = cv.getBoundingClientRect(); ctx.clearRect(0, 0, r.width, r.height);
+    ctx.lineWidth = 1; ctx.strokeStyle = col.line;
+    links.forEach(function (l) { var a = nodes[l[0]], b = nodes[l[1]]; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke(); });
+    ctx.fillStyle = col.node;
+    nodes.forEach(function (p) { ctx.beginPath(); ctx.arc(p.x, p.y, 2.2, 0, 6.283); ctx.fill(); });
+    var prog = ms === null ? 1 : Math.min(1, ms / 3000), segs = route.length - 1, upto = prog * segs;
+    var g = ctx.createLinearGradient(nodes[route[0]].x, 0, nodes[route[segs]].x, 0);
+    g.addColorStop(0, col.a); g.addColorStop(1, col.b);
+    ctx.strokeStyle = g; ctx.lineWidth = 1.8; ctx.globalAlpha = 0.9; ctx.beginPath();
+    for (var k = 0; k < segs && k <= upto; k++) {
+      var a = nodes[route[k]], b = nodes[route[k + 1]], f = Math.min(1, upto - k);
+      if (k === 0) ctx.moveTo(a.x, a.y); ctx.lineTo(a.x + (b.x - a.x) * f, a.y + (b.y - a.y) * f);
+    }
+    ctx.stroke(); ctx.globalAlpha = 1;
+    for (var m = 0; m <= Math.min(segs, Math.floor(upto)); m++) {
+      var q = nodes[route[m]]; ctx.fillStyle = m === segs ? col.b : col.a; ctx.beginPath(); ctx.arc(q.x, q.y, 3.4, 0, 6.283); ctx.fill();
+    }
+    if (prog === 1) {
+      var tg = nodes[route[segs]], p = ms === null ? 0.4 : (Math.sin((ms - 3000) / 520) + 1) / 2;
+      ctx.strokeStyle = col.b; ctx.lineWidth = 1.2;
+      [10, 20].forEach(function (rr, i) { ctx.globalAlpha = (0.55 - i * 0.2) * (1 - p * 0.6); ctx.beginPath(); ctx.arc(tg.x, tg.y, rr + p * 6, 0, 6.283); ctx.stroke(); });
+      ctx.globalAlpha = 1;
+    }
+  }
+  function frame(ts) { if (t0 === null) t0 = ts; draw(ts - t0); requestAnimationFrame(frame); }
+  colors(); build();
+  if (reduce) draw(null); else requestAnimationFrame(frame);
+  var rt; window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { build(); if (reduce) draw(null); }, 150); });
+  new MutationObserver(function () { colors(); if (reduce) draw(null); }).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+  var mq = window.matchMedia('(prefers-color-scheme: light)');
+  if (mq.addEventListener) mq.addEventListener('change', function () { colors(); if (reduce) draw(null); });
+})();
+</script>
+</body>
+</html>
