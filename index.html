@@ -13,28 +13,29 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#070d18">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070d18'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='36' text-anchor='middle' fill='%234fd1c5'%3EA%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0d0d0f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d0d0f'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='36' text-anchor='middle' fill='%23f3b94d'%3EA%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
 <style>
-/* Layout: dark-first editorial page. Split hero (text + framed portrait) over an attack-path field,
+/* Palette: Graphite & Amber, dark by default (light via the toggle).
+   Layout: dark-first editorial page. Split hero (text + framed portrait) over an attack-path field,
    then a results board, a work timeline, project cards, and track lanes for athletics. */
 :root {
-  --bg: #070d18;
-  --bg-2: #0b1424;
-  --surface: rgba(148, 178, 214, 0.045);
-  --surface-2: rgba(148, 178, 214, 0.08);
-  --ink: #e9eff7;
-  --muted: #93a2b8;
-  --line: rgba(148, 178, 214, 0.15);
-  --accent: #4fd1c5;
-  --accent-2: #7dd3fc;
-  --track: #f5a06f;
-  --glow: rgba(79, 209, 197, 0.16);
-  --node: rgba(148, 178, 214, 0.35);
-  --grain: 0.05;
+  --bg: #0d0d0f;
+  --bg-2: #131316;
+  --surface: rgba(255,255,255,0.03);
+  --surface-2: rgba(255,255,255,0.055);
+  --ink: #ededf0;
+  --muted: #9b9ba5;
+  --line: rgba(255,255,255,0.09);
+  --accent: #f3b94d;
+  --accent-2: #f08a5d;
+  --track: #f08a5d;
+  --glow: rgba(243,185,77,0.12);
+  --node: rgba(255,255,255,0.22);
+  --grain: 0.04;
   --sans: "Geist", "Segoe UI", system-ui, -apple-system, sans-serif;
   --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
   --mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
@@ -47,38 +48,20 @@
   --s-hero: clamp(3rem, 1.6rem + 5.6vw, 5.75rem);
   color-scheme: dark;
 }
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    --bg: #f6f7f9;
-    --bg-2: #eef1f5;
-    --surface: #ffffff;
-    --surface-2: #f1f4f8;
-    --ink: #0c1626;
-    --muted: #55637a;
-    --line: #dfe4ec;
-    --accent: #0a7f78;
-    --accent-2: #0369a1;
-    --track: #c2410c;
-    --glow: rgba(10, 127, 120, 0.10);
-    --node: rgba(85, 99, 122, 0.35);
-    --grain: 0.025;
-    color-scheme: light;
-  }
-}
 :root[data-theme="light"] {
-  --bg: #f6f7f9;
-  --bg-2: #eef1f5;
+  --bg: #fafaf8;
+  --bg-2: #f2f2ef;
   --surface: #ffffff;
-  --surface-2: #f1f4f8;
-  --ink: #0c1626;
-  --muted: #55637a;
-  --line: #dfe4ec;
-  --accent: #0a7f78;
-  --accent-2: #0369a1;
-  --track: #c2410c;
-  --glow: rgba(10, 127, 120, 0.10);
-  --node: rgba(85, 99, 122, 0.35);
-  --grain: 0.025;
+  --surface-2: #f3f3f0;
+  --ink: #141416;
+  --muted: #5e5e66;
+  --line: #e5e5e1;
+  --accent: #94600f;
+  --accent-2: #b44c26;
+  --track: #b44c26;
+  --glow: rgba(183,121,31,0.10);
+  --node: rgba(94,94,102,0.30);
+  --grain: 0.02;
   color-scheme: light;
 }
 
@@ -335,6 +318,73 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8p
   .highlights div + div { border-left: 0; border-top: 1px solid var(--line); }
   .facts > div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
   section { padding-block: 64px; }
+}
+
+/* ---------- v2: fewer boxes, more air ---------- */
+section { padding-block: 112px; }
+.hero { padding-block: 104px 88px; }
+.hero::before { opacity: 0.8; }
+#field { opacity: 0.5; }
+.hero h1 { font-weight: 500; letter-spacing: -0.05em; }
+.status { background: transparent; }
+.frame { box-shadow: 0 40px 90px -40px color-mix(in srgb, var(--accent) 40%, transparent); }
+.highlights { border: 0; border-radius: 0; background: none; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: 88px; }
+.highlights div { padding: 28px 24px 26px 0; }
+.highlights div + div { border-left: 1px solid var(--line); padding-left: 24px; }
+.highlights b { font-size: 2.75rem; color: var(--accent); }
+.head h2 { font-weight: 500; }
+.facts { background: none; border: 0; border-radius: 0; border-top: 1px solid var(--line); }
+.facts > div { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.facts > div + div { border-top: 0; }
+.timeline { gap: 0; border-top: 1px solid var(--line); }
+.job { border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: none; padding: 40px 0; }
+.job.feature { background: none; }
+.bullets li::before { width: 6px; height: 6px; border: 0; border-radius: 50%; background: var(--accent); transform: none; }
+.lane .bullets li::before { background: var(--track); }
+.tag { border-radius: 999px; }
+.board { border: 0; border-radius: 0; background: none; border-top: 1px solid var(--line); }
+.row { padding: 30px 0; border-bottom: 1px solid var(--line); }
+.row + .row { border-top: 0; }
+.proj { border: 0; background: var(--surface-2); border-radius: 22px; padding: 28px; }
+.proj:hover { background: color-mix(in srgb, var(--accent) 9%, var(--surface-2)); }
+.proj .ico { border: 0; background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.lanes { gap: 0; border-top: 1px solid var(--line); }
+.lane { border: 0; border-radius: 0; background: none; padding: 34px 0 40px; }
+.medals { margin-top: 28px; }
+.medals div { border: 0; background: var(--surface-2); }
+.skills { gap: 40px; }
+.skills > div { border: 0; border-radius: 0; background: none; padding: 20px 0 0; border-top: 2px solid var(--accent); }
+.chips span { background: transparent; }
+.contact { border: 0; }
+/* responsive: no sideways scroll, laptop-height hero, bigger small links */
+html, body { overflow-x: clip; }
+.gh { min-height: 32px; padding-inline: 2px; }
+@media (min-width: 921px) and (max-height: 860px) {
+  .hero { padding-block: 64px 56px; }
+  .hero h1 { margin-top: 18px; }
+  .tagline { margin-top: 16px; }
+  .cta { margin-top: 26px; }
+  .highlights { margin-top: 56px; }
+}
+@media (min-width: 921px) and (max-width: 1180px) {
+  .hero-grid { gap: 40px; }
+  .chip-card.top { right: -8px; }
+}
+@media (max-width: 380px) {
+  body { padding-inline: max(16px, env(safe-area-inset-left, 0px)); }
+  .nav { margin-inline: -16px; padding-inline: 16px; }
+  .contact { padding: 32px 20px; }
+  .mail code { font-size: var(--s-sm); }
+}
+@media (max-width: 920px) {
+  .highlights div:nth-child(3) { border-left: 0; padding-left: 0; }
+  .highlights div:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .job, .lane { padding: 28px 0; }
+  .skills { gap: 32px; }
+}
+@media (max-width: 560px) {
+  .highlights div + div { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); }
+  section { padding-block: 72px; }
 }
 </style>
 <script>
@@ -606,7 +656,7 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8p
   // theme toggle
   document.getElementById('theme').addEventListener('click', function () {
     var cur = root.getAttribute('data-theme');
-    if (!cur) cur = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    if (!cur) cur = 'dark';
     var next = cur === 'dark' ? 'light' : 'dark';
     root.setAttribute('data-theme', next);
     try { localStorage.setItem('theme', next); } catch (e) {}
