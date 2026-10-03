@@ -245,6 +245,9 @@ section { padding-block: 88px; }
 .proj h3 { font-size: var(--s-md); letter-spacing: -0.01em; }
 .proj p { color: var(--muted); font-size: 0.9375rem; flex: 1; }
 .proj .stat { font-family: var(--serif); font-size: 1.6rem; line-height: 1; }
+.more { margin-top: 22px; color: var(--muted); font-size: var(--s-sm); }
+.more a { color: var(--ink); text-underline-offset: 3px; }
+.more a:hover { color: var(--accent); }
 .proj .stat small { font-family: var(--mono); font-size: 0.6875rem; letter-spacing: 0.06em; color: var(--muted); margin-left: 6px; text-transform: uppercase; }
 
 /* athletics: track lanes */
@@ -398,6 +401,7 @@ html, body { overflow-x: clip; }
     <a class="mono-mark" href="#top" aria-label="Ajeet Singh Rajpoot, home"><i>A</i>Ajeet Singh Rajpoot</a>
     <nav aria-label="Sections">
       <a href="#work">Work</a>
+      <a href="#cases">Case studies</a>
       <a href="#results">Results</a>
       <a href="#projects">Projects</a>
       <a href="#athletics">Athletics</a>
@@ -477,9 +481,9 @@ html, body { overflow-x: clip; }
           <h3>Associate Product Manager</h3>
           <p class="org"><b>EmulateAI</b></p>
           <ul class="bullets">
-            <li>Own the roadmap and sprint planning for the R&amp;D team.</li>
-            <li>Design product experiences end to end, from user flows and prototypes to PRDs.</li>
-            <li>Track the market and validate every release before it ships.</li>
+            <li>Own roadmap prioritization and sprint planning for a 10-engineer R&amp;D team.</li>
+            <li>Design core experiences end to end, from user flows and prototypes to PRDs, including vulnerability revalidation, the developer fix loop and assessment launch.</li>
+            <li>Designed the credit-based licensing model, and validate every release against its acceptance criteria before it ships.</li>
           </ul>
           <div class="tags"><span class="tag">Roadmapping</span><span class="tag">Prototyping</span><span class="tag">PRDs</span></div>
         </div>
@@ -491,8 +495,8 @@ html, body { overflow-x: clip; }
           <h3>Operations</h3>
           <p class="org"><b>TutorBin</b></p>
           <ul class="bullets">
-            <li>Built and analyzed Power BI performance dashboards that streamlined workflows across the sales and marketing teams.</li>
-            <li>Ran the end-to-end sales pipeline and international client operations as the main point of contact.</li>
+            <li>Built Power BI dashboards on sales and marketing performance that the teams used to find and fix workflow bottlenecks.</li>
+            <li>Ran the sales pipeline and international client operations end to end, as the main point of contact from requirement to delivery.</li>
           </ul>
           <div class="tags"><span class="tag">Power BI</span><span class="tag">CRM</span><span class="tag">Sales operations</span></div>
         </div>
@@ -504,13 +508,39 @@ html, body { overflow-x: clip; }
           <h3>Product Management Intern</h3>
           <p class="org"><b>SportsHedge</b> · cricket player-trading platform</p>
           <ul class="bullets">
-            <li>Shaped the MVP from 30+ user interviews and a review of 7 sports-trading platforms, ranking features by user pain.</li>
-            <li>Drove go-to-market through 10+ influencer partnerships and data-led campaigns: 46k+ visitors in 2 months.</li>
+            <li>Shaped the MVP from 30+ user interviews and a review of 7 competing platforms, ranking features by user pain.</li>
+            <li>Designed the user flows and wireframes in Figma.</li>
+            <li>Drove 46k+ visitors in 2 months through 10+ influencer partnerships.</li>
           </ul>
           <div class="tags"><span class="tag">User research</span><span class="tag">Figma</span><span class="tag">Go-to-market</span></div>
         </div>
       </article>
     </div>
+  </section>
+
+  <section id="cases" aria-labelledby="cases-h">
+    <div class="head"><p class="label">Case studies</p><h2 id="cases-h">Product <em class="s">case studies</em></h2><p>How I take a product from discovery to result. Each card opens the full write-up on GitHub.</p></div>
+    <div class="projects">
+      <a class="proj" href="https://github.com/ajeetarman299/product-case-studies/blob/main/sportshedge-mvp.md" target="_blank" rel="noopener">
+        <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><span class="arrow">Case study ↗</span></div>
+        <h3>SportsHedge MVP</h3>
+        <p>Discovery to launch for a cricket player-trading MVP: 30+ user interviews and 7 platforms benchmarked to set the scope, then 10+ influencer partnerships for go-to-market.</p>
+        <p class="stat">46k+<small>visitors in 2 months</small></p>
+      </a>
+      <a class="proj" href="https://github.com/ajeetarman299/product-case-studies/blob/main/open-iit-areca-film.md" target="_blank" rel="noopener">
+        <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span><span class="arrow">Case study ↗</span></div>
+        <h3>Areca-nut packaging film</h3>
+        <p>Open IIT Product Management: I led a 9-member team with a biodegradable film made from areca-nut shells that breaks down in soil in 78 days.</p>
+        <p class="stat">1st<small>of 16 teams</small></p>
+      </a>
+      <a class="proj" href="https://github.com/ajeetarman299/product-case-studies/blob/main/rag-chatbot-product-review.md" target="_blank" rel="noopener">
+        <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span><span class="arrow">Case study ↗</span></div>
+        <h3>FAQ chatbot product review</h3>
+        <p>An AI product evaluation of my own RAG assistant: what the prototype showed, and the launch criteria I would set before shipping it to students.</p>
+        <p class="stat">4<small>launch criteria</small></p>
+      </a>
+    </div>
+    <p class="more">Also: my <a href="https://github.com/ajeetarman299/product-case-studies/blob/main/templates/prd-template.md" target="_blank" rel="noopener">PRD template</a> and <a href="https://github.com/ajeetarman299/product-case-studies/blob/main/templates/release-signoff-checklist.md" target="_blank" rel="noopener">release sign-off checklist</a> · <a href="https://github.com/ajeetarman299/product-case-studies" target="_blank" rel="noopener">All case studies →</a></p>
   </section>
 
   <section id="results" aria-labelledby="results-h">
