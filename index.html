@@ -12,9 +12,13 @@
 <meta property="og:image" content="https://ajeetarman299.github.io/assets/og.png?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ajeet Singh Rajpoot, Associate Product Manager at EmulateAI: product manager building an autonomous pentesting product.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0d0d0f">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d0d0f'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='36' text-anchor='middle' fill='%23f3b94d'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://ajeetarman299.github.io/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
@@ -209,6 +213,9 @@ section { padding-block: 88px; }
 .job h3 { font-size: var(--s-lg); letter-spacing: -0.02em; }
 .org { color: var(--muted); margin-top: 4px; }
 .org b { color: var(--ink); font-weight: 600; }
+.org a { text-decoration: none; }
+.org a:hover { color: var(--accent); }
+.board + .projects { margin-top: 16px; }
 .bullets { display: grid; gap: 10px; margin-top: 18px; max-width: 46rem; }
 .bullets li { position: relative; padding-left: 22px; }
 .bullets li::before { content: ""; position: absolute; left: 2px; top: 0.66em; width: 7px; height: 7px; border-radius: 2px; border: 1.5px solid var(--accent); transform: rotate(45deg); }
@@ -393,6 +400,9 @@ html, body { overflow-x: clip; }
 <script>
   try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Ajeet Singh Rajpoot","jobTitle":"Associate Product Manager","worksFor":{"@type":"Organization","name":"EmulateAI","url":"https://emulateai.ai"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Indian Institute of Technology Kharagpur"},"url":"https://ajeetarman299.github.io/","image":"https://ajeetarman299.github.io/assets/ajeet.jpg","address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"},"sameAs":["https://www.linkedin.com/in/ajeet-singh-rajpoot","https://github.com/ajeetarman299"]}
+</script>
 </head>
 <body>
 
@@ -402,8 +412,7 @@ html, body { overflow-x: clip; }
     <nav aria-label="Sections">
       <a href="#work">Work</a>
       <a href="#cases">Case studies</a>
-      <a href="#results">Results</a>
-      <a href="#projects">Projects</a>
+      <a href="#ai-work">AI work</a>
       <a href="#athletics">Athletics</a>
       <a class="keep" href="#contact">Contact</a>
       <button class="theme" id="theme" type="button" aria-label="Switch colour theme">
@@ -421,7 +430,7 @@ html, body { overflow-x: clip; }
         <span class="status"><span class="pulse" aria-hidden="true"></span>Associate Product Manager at EmulateAI</span>
         <h1>Ajeet Singh <span class="last">Rajpoot</span></h1>
         <p class="tagline">Product manager building an <em class="s grad">autonomous pentesting</em> product.</p>
-        <p class="lede">I own the roadmap, design the flows, and take each feature from the first user flow to release sign-off. IIT Kharagpur graduate with a data-science background, and an athlete at heart.</p>
+        <p class="lede">I own the roadmap, design the flows, and take each feature from the first user flow to release sign-off. IIT Kharagpur graduate in Chemistry who moved into data science and then product, and an athlete at heart.</p>
         <div class="cta">
           <a class="btn primary" href="#contact">Get in touch</a>
           <a class="btn" href="https://www.linkedin.com/in/ajeet-singh-rajpoot" target="_blank" rel="noopener">
@@ -441,13 +450,13 @@ html, body { overflow-x: clip; }
       <div class="portrait">
         <div class="frame"><img src="assets/ajeet.jpg" width="400" height="400" alt="Portrait of Ajeet Singh Rajpoot"></div>
         <div class="chip-card top"><span>Based in</span><b>Bengaluru, India</b></div>
-        <div class="chip-card"><span>Alumni</span><b>IIT Kharagpur '25</b></div>
+        <div class="chip-card"><span>Alumnus</span><b>IIT Kharagpur '25</b></div>
       </div>
     </div>
 
     <div class="highlights" aria-label="Highlights">
       <div><b>1st <em class="s" style="font-size:.6em;color:var(--muted)">of 16</em></b><span>Open IIT Product Management, team lead</span></div>
-      <div><b>Top 50</b><span>of 10,000+ teams, Amazon ML Challenge 2024</span></div>
+      <div><b>20+</b><span>PRDs written at EmulateAI</span></div>
       <div><b>70+</b><span>athletes led to Inter-IIT overall gold</span></div>
       <div><b>46k+</b><span>visitors in 2 months at SportsHedge launch</span></div>
     </div>
@@ -460,13 +469,13 @@ html, body { overflow-x: clip; }
         <div class="text">
           <p>I'm a product manager working on an autonomous pentesting product.</p>
           <p>I work across strategy and design: roadmap and sprint planning on one side, user flows, prototypes and PRDs on the other.</p>
-          <p>My data-science background helps me build AI products around how the technology actually behaves. Before product, I was Vice-Captain of IIT Kharagpur's Inter-IIT athletics team.</p>
+          <p>I studied Chemistry at IIT Kharagpur with a quantitative focus that took me into data science. That helps me build AI products around how the technology actually behaves. Before product, I was Vice Captain of IIT Kharagpur's Inter-IIT athletics team.</p>
         </div>
       </div>
       <dl class="facts" aria-label="At a glance">
         <div><dt>Role</dt><dd>Associate Product Manager, EmulateAI</dd></div>
         <div><dt>Focus</dt><dd>Product strategy, UX and prototyping, roadmap and delivery</dd></div>
-        <div><dt>Education</dt><dd>Integrated M.Sc., IIT Kharagpur, 2020 - 2025 · CGPA 8.2/10</dd></div>
+        <div><dt>Education</dt><dd>Integrated M.Sc. (Chemistry), IIT Kharagpur, 2020 - 2025 · CGPA 8.2/10</dd></div>
         <div><dt>Location</dt><dd>Bengaluru, India</dd></div>
       </dl>
     </div>
@@ -479,18 +488,18 @@ html, body { overflow-x: clip; }
         <div class="when"><span class="now"><span class="pulse" aria-hidden="true"></span>Oct 2025 - Present</span><span>Bengaluru</span></div>
         <div>
           <h3>Associate Product Manager</h3>
-          <p class="org"><b>EmulateAI</b></p>
+          <p class="org"><b><a href="https://emulateai.ai" target="_blank" rel="noopener">EmulateAI</a></b></p>
           <ul class="bullets">
-            <li>Own roadmap prioritization and sprint planning for a 10-engineer R&amp;D team.</li>
-            <li>Design core experiences end to end, from user flows and prototypes to PRDs, including vulnerability revalidation, the developer fix loop and assessment launch.</li>
-            <li>Designed the credit-based licensing model, and validate every release against its acceptance criteria before it ships.</li>
+            <li>Own roadmap prioritization and sprint planning for a 10-engineer R&amp;D team; led the MVP launch, taking 100+ prioritized work items to production in 6 weeks.</li>
+            <li>Design core flows end to end, from user flows and prototypes to 20+ PRDs, including assessment launch, the developer fix loop and AI-driven remediation.</li>
+            <li>Designed the credit-based licensing model, and own go/no-go for every release through a two-stage release gate.</li>
           </ul>
           <div class="tags"><span class="tag">Roadmapping</span><span class="tag">Prototyping</span><span class="tag">PRDs</span></div>
         </div>
       </article>
 
       <article class="job">
-        <div class="when"><span>Jun 2025 - Sep 2025</span><span>Gurugram</span></div>
+        <div class="when"><span>Jun 2025 - Aug 2025</span><span>Gurugram</span></div>
         <div>
           <h3>Operations</h3>
           <p class="org"><b>TutorBin</b></p>
@@ -536,34 +545,17 @@ html, body { overflow-x: clip; }
       <a class="proj" href="https://github.com/ajeetarman299/product-case-studies/blob/main/rag-chatbot-product-review.md" target="_blank" rel="noopener">
         <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span><span class="arrow">Case study ↗</span></div>
         <h3>FAQ chatbot product review</h3>
-        <p>An AI product evaluation of my own RAG assistant: what the prototype showed, and the launch criteria I would set before shipping it to students.</p>
-        <p class="stat">4<small>launch criteria</small></p>
+        <p>An AI product review of a RAG assistant: a 42-question evaluation, what it got wrong, and the launch criteria I would set before shipping it to students.</p>
+        <p class="stat">94%<small>right FAQ ranked first</small></p>
       </a>
     </div>
     <p class="more">Also: my <a href="https://github.com/ajeetarman299/product-case-studies/blob/main/templates/prd-template.md" target="_blank" rel="noopener">PRD template</a> and <a href="https://github.com/ajeetarman299/product-case-studies/blob/main/templates/release-signoff-checklist.md" target="_blank" rel="noopener">release sign-off checklist</a> · <a href="https://github.com/ajeetarman299/product-case-studies" target="_blank" rel="noopener">All case studies →</a></p>
+    <p class="more">Also placed 2nd at the Case Study General Championship (2023), with market policies and grid-storage strategies to lift the renewable share from 30% to 70-80%.</p>
   </section>
 
-  <section id="results" aria-labelledby="results-h">
-    <div class="head"><p class="label">Competitions</p><h2 id="results-h">The <em class="s">results</em> board</h2><p>Product cases and machine-learning challenges, with the result each one earned.</p></div>
+  <section id="ai-work" aria-labelledby="ai-h">
+    <div class="head"><p class="label">AI and data</p><h2 id="ai-h">AI and <em class="s">data-science</em> work</h2><p>Machine-learning competitions and projects from IIT Kharagpur, with the result each one earned. Each project opens the code on GitHub.</p></div>
     <div class="board">
-      <div class="row">
-        <p class="res grad">1st<small>of 16 teams</small></p>
-        <div>
-          <h3>Open IIT Product Management</h3>
-          <p class="meta">Sustainable product innovation</p>
-          <p>Led a 9-member team with a crop-residue solution: a biodegradable packaging film from areca-nut shells that breaks down in soil in 78 days, addressing 10 SDGs.</p>
-        </div>
-        <div class="yr"><span>2023</span></div>
-      </div>
-      <div class="row">
-        <p class="res grad">2nd<small>place</small></p>
-        <div>
-          <h3>Case Study General Championship</h3>
-          <p class="meta">Energy transition &amp; storage</p>
-          <p>Proposed market policies and grid-storage strategies to lift renewable share from 30% to 70-80%. Radhakrishnan Hall's first podium in the event.</p>
-        </div>
-        <div class="yr"><span>2023</span></div>
-      </div>
       <div class="row">
         <p class="res grad">Top 50<small>of 10,000+ teams</small></p>
         <div>
@@ -578,7 +570,7 @@ html, body { overflow-x: clip; }
         <div>
           <h3>American Express Campus Challenge</h3>
           <p class="meta">Predicting T20 match winners</p>
-          <p>Engineered 35+ features, reduced them with PCA and VIF, and tuned CatBoost and LightGBM models to 64% accuracy.</p>
+          <p>Engineered 35+ features, reduced them with PCA and VIF, and tuned four gradient-boosting models (XGBoost scored best) to 64% accuracy on the challenge test set.</p>
         </div>
         <div class="yr"><span>2024</span><a class="gh" href="https://github.com/ajeetarman299/Predict-The-Winner-of-The-T20-Cricket-Match" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.2c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3"/></svg>Code</a></div>
       </div>
@@ -592,17 +584,7 @@ html, body { overflow-x: clip; }
         <div class="yr"><span>2023</span></div>
       </div>
     </div>
-  </section>
-
-  <section id="projects" aria-labelledby="projects-h">
-    <div class="head"><p class="label">Projects</p><h2 id="projects-h">Built at <em class="s">IIT Kharagpur</em></h2><p>Machine-learning projects from 2024. Each card opens the code on GitHub.</p></div>
     <div class="projects">
-      <a class="proj" href="https://github.com/ajeetarman299/Question-Answering-ChatBot-System-Development" target="_blank" rel="noopener">
-        <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span class="arrow">GitHub ↗</span></div>
-        <h3>Question-answering chatbot</h3>
-        <p>An LLM Q&amp;A assistant for an e-learning company: LangChain, HuggingFace embeddings and FAISS semantic search over a large FAQ set.</p>
-        <p class="stat">LLM<small>LangChain · FAISS</small></p>
-      </a>
       <a class="proj" href="https://github.com/ajeetarman299/Movement-Detection-Using-Radar-Data" target="_blank" rel="noopener">
         <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 12 18 6"/></svg></span><span class="arrow">GitHub ↗</span></div>
         <h3>Movement detection from radar</h3>
@@ -613,9 +595,10 @@ html, body { overflow-x: clip; }
         <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg></span><span class="arrow">GitHub ↗</span></div>
         <h3>Alloy strength optimization</h3>
         <p>A CatBoost model that predicts fatigue strength, then a grid search for the metal proportions that hit a target strength at lower cost.</p>
-        <p class="stat">88.5%<small>validation accuracy</small></p>
+        <p class="stat">0.89<small>R² on held-out data</small></p>
       </a>
     </div>
+    <p class="more">Smaller builds: <a href="https://github.com/ajeetarman299/Question-Answering-ChatBot-System-Development" target="_blank" rel="noopener">FAQ chatbot</a> (LangChain, FAISS, Gemini) and <a href="https://github.com/ajeetarman299/Cold-Mail-Generator" target="_blank" rel="noopener">cold-email generator</a> (Groq, LangChain, ChromaDB).</p>
   </section>
 
   <section id="athletics" aria-labelledby="ath-h">
@@ -670,6 +653,7 @@ html, body { overflow-x: clip; }
       <div class="mail">
         <code id="email">ajeetarman299@gmail.com</code>
         <button class="btn" id="copy" type="button">Copy email</button>
+        <a class="btn" href="mailto:ajeetarman299@gmail.com">Email ↗</a>
         <a class="btn" href="https://www.linkedin.com/in/ajeet-singh-rajpoot" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a class="btn" href="https://github.com/ajeetarman299" target="_blank" rel="noopener">GitHub ↗</a>
         <a class="btn" href="assets/Ajeet-Singh-Rajpoot-Resume.pdf" download="Ajeet-Singh-Rajpoot-Resume.pdf">Resume ↓</a>
